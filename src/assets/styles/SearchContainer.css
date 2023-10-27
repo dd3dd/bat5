@@ -1,0 +1,30 @@
+.SearchContainer {
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'searchHeader searchHeader'
+        'searchSelect searchSelect'
+        'searchCheckBox myImg';
+}
+
+.SearchHeader {
+    grid-area: searchHeader;
+    height: 50px;
+}
+
+.SearchSelect {
+    grid-area: searchSelect;
+    height: 50px;
+}
+
+.SearchCheckBox {
+    grid-area: searchCheckBox;
+    height: 300px;
+}
+
+.MyImg {
+    grid-area: myImg;
+    height: 300px;
+}

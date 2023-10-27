@@ -9,12 +9,15 @@
 .Header {
     grid-area: header;
     height: 100px;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .Search {
     grid-area: search;
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .Result {
@@ -26,7 +29,22 @@
     font-size: 1.25rem;
     color: #677510;
     font-weight: 700;
-    margin-right: 40px;
+}
+
+.myNav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    min-width: 95px;
+}
+
+.FiveText {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
 }
 
 .LoginBut {
@@ -36,4 +54,10 @@
     border-radius: 100px;
     color: white;
     font-size: 1.2rem;
+}
+
+.LoginButDiv {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
 }

@@ -6,6 +6,7 @@ export default function Container() {
     return (
         <div className="Container">
             <Header />
+            <hr />
             <Search />
             <Result />
         </div>

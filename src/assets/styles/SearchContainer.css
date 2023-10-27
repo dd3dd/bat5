@@ -12,19 +12,99 @@
 .SearchHeader {
     grid-area: searchHeader;
     height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #B5CC22;
+    font-weight: 700;
 }
 
 .SearchSelect {
     grid-area: searchSelect;
     height: 50px;
+    display: flex;
+    align-items: center;
+
 }
 
 .SearchCheckBox {
     grid-area: searchCheckBox;
     height: 300px;
+    margin-top: 10px;
 }
 
 .MyImg {
+    background-image: url('../images/Frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: myImg;
     height: 300px;
+    margin-top: 10px;
+}
+
+.SelectCity {
+    width: 15%;
+    height: 35px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.SearchStation {
+    width: 22%;
+    height: 35px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    padding: 10px;
+}
+
+@media (max-width:768px) {
+    .SearchContainer {
+        width: 90%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            'searchHeader'
+            'searchSelect'
+            'searchCheckBox';
+    }
+
+    .SearchSelect {
+        /* grid-area: searchSelect; */
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .SearchCheckBox {
+        /* grid-area: searchCheckBox; */
+        height: 250px;
+    }
+
+    .SelectCity {
+        width: 100%;
+        height: 35px;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+    }
+
+    .SearchStation {
+        width: 100%;
+        height: 35px;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        position: relative;
+        left: 0;
+        padding: 10px;
+    }
+
+    .MyImg {
+        /* grid-area: myImg; */
+        display: none;
+    }
 }

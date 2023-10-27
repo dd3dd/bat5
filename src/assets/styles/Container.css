@@ -2,6 +2,7 @@
     display: grid;
     grid-template-areas:
         'header'
+        'hr'
         'search'
         'result';
 }
@@ -11,6 +12,10 @@
     height: 100px;
     display: flex;
     justify-content: center;
+}
+
+hr {
+    grid-area: hr;
 }
 
 .Search {

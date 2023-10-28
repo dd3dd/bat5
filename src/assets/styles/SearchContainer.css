@@ -59,6 +59,8 @@
     padding: 10px;
 }
 
+
+
 @media (max-width:768px) {
     .SearchContainer {
         width: 90%;
@@ -104,11 +106,5 @@
     .MyImg {
         /* grid-area: myImg; */
         display: none;
-    }
-}
-
-@media (max-width:339px) {
-    .SearchCheckBox {
-        /* height: 430px; */
     }
 }

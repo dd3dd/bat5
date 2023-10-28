@@ -3,8 +3,10 @@ import { useContext } from 'react'
 import UserContext from '../Context/UserContext'
 export default function SelectCity() {
     const { selectCity, setSelectCity } = useContext(UserContext);
+    const { searchText, setSearchText } = useContext(UserContext);
     const test = (e) => {
         // console.log(e.target.value)
+        setSearchText('');
         setSelectCity(e.target.value)
     }
     return (

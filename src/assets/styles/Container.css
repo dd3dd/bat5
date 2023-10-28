@@ -20,7 +20,7 @@ hr {
 
 .Search {
     grid-area: search;
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     justify-content: center;
 }
@@ -28,6 +28,9 @@ hr {
 .Result {
     grid-area: result;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
 }
 
 .HeaderText {
@@ -65,4 +68,19 @@ hr {
     flex-grow: 1;
     display: flex;
     justify-content: end;
+}
+
+@media (max-width:768px) {
+    .Search {
+        /* height: 520px; */
+    }
+
+
+}
+
+@media (max-width:339px) {
+    .Search {
+        /* height: 580px; */
+    }
+
 }

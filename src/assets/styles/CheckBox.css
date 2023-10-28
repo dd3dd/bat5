@@ -2,14 +2,17 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    min-width: 115px;
+    /* min-width: 115px; */
     font-size: 1.3rem;
 }
 
 .TownCheck {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 650px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: space-around;
+    grid-column-gap: 10px;
+    /* flex-wrap: wrap; */
+    /* max-width: 650px; */
 }
 
 .MyInput {
@@ -19,7 +22,9 @@
 }
 
 @media (max-width:768px) {
-    .Select {
-        min-width: 33.3%;
+    .TownCheck {
+        /* width: 100%; */
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     }
+
 }

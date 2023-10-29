@@ -16,13 +16,6 @@
     flex-direction: column;
 }
 
-/* .ResulContainer {
-    width: 90%;
-    background-color: white;
-    border-radius: 25px;
-    display: grid;
-} */
-
 .Title {
     background-color: #B5CC22;
     height: 65px;
@@ -38,9 +31,21 @@
 .Region,
 .Borrow,
 .Return {
-    width: 15%;
     display: flex;
     justify-content: center;
+}
+
+.City {
+    width: 15%;
+}
+
+.Region {
+    width: 15%;
+}
+
+.Borrow,
+.Return {
+    width: 20%;
 }
 
 .StationName {
@@ -51,7 +56,6 @@
 
 .ShowData {
     height: 400px;
-    overflow-y: auto;
 }
 
 .DataRow {
@@ -78,23 +82,32 @@
     font-weight: 600;
 }
 
-@media (max-width:570px) {
+.SortIcon {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    /* .City,
+@media (max-width:768px) {
+
+    .City,
     .Region,
     .Borrow,
-    .Return {
-        min-width: 25%;
+    .Return,
+    .StationName {
+        width: 20%;
     }
 
-    .StationName {
-        min-width: 50%;
-    } */
     .Title {
         font-size: 1rem;
     }
 
     .DataRow {
         font-size: 0.9rem;
+    }
+
+    .SortIcon {
+        margin: 0;
     }
 }

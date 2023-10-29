@@ -4,13 +4,12 @@ import UserContext from '../Context/UserContext'
 export default function SelectCity() {
     const { selectCity, setSelectCity } = useContext(UserContext);
     const { searchText, setSearchText } = useContext(UserContext);
-    const test = (e) => {
-        // console.log(e.target.value)
+    const handleSearch = (e) => {
         setSearchText('');
         setSelectCity(e.target.value)
     }
     return (
-        <select className='SelectCity' onChange={test}>
+        <select className='SelectCity' onChange={handleSearch}>
             <option value="臺北市">臺北市</option>
             <option value="新北市" >新北市</option>
             <option value="新竹市">新竹市</option>

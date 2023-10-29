@@ -8,6 +8,10 @@
 }
 
 .Header {
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    background-color: white;
     grid-area: header;
     height: 100px;
     display: flex;
@@ -20,7 +24,6 @@ hr {
 
 .Search {
     grid-area: search;
-    /* height: 400px; */
     display: flex;
     justify-content: center;
 }
@@ -37,6 +40,10 @@ hr {
     font-size: 1.25rem;
     color: #677510;
     font-weight: 700;
+}
+
+.HeaderText:hover {
+    color: #B5CC22;
 }
 
 .myNav {
@@ -70,17 +77,38 @@ hr {
     justify-content: end;
 }
 
-@media (max-width:768px) {
-    .Search {
-        /* height: 520px; */
-    }
-
-
+.DropMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    padding: 35px;
+    height: calc(100vh - 100px);
+    background-color: #B5CC22;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
 }
 
-@media (max-width:339px) {
-    .Search {
-        /* height: 580px; */
-    }
+.DropMenuText {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 70px;
+}
 
+.DropMenuText:hover {
+    color: #677510;
+}
+
+.DropMenuBut {
+    position: absolute;
+    bottom: 40px;
+    background-color: white;
+    width: 85px;
+    height: 40px;
+    border-radius: 100px;
+    color: #B5CC22;
+    font-size: 1.2rem;
 }

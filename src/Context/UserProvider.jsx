@@ -11,11 +11,15 @@ const UserProvider = ({ children }) => {
     const [data, setData] = useState(null);
     const [searchText, setSearchText] = useState('');
 
+    const [sortBorrow, setSortBorrow] = useState(0);
+    const [sortReturn, setSortReturn] = useState(0);
+
     return (
         <UserContext.Provider value={{
             selectCity, setSelectCity, searchStation, setSearchStation,
             isChecked, setIsChecked, isCheckedAll, setIsCheckedAll,
-            data, setData, searchText, setSearchText
+            data, setData, searchText, setSearchText,
+            sortBorrow, setSortBorrow, sortReturn, setSortReturn
         }}>
             {children}
         </UserContext.Provider>

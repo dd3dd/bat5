@@ -17,14 +17,15 @@ export default function SelectAll() {
             setIsCheckedAll(true)
         }
     }
-    return (<>
-        {
-            selectCity === '臺北市' && <div className="Select">
-                <input className='MyInput' type="checkbox" id="scales" name="scales"
-                    checked={isCheckedAll} onChange={handleCheckAll} />
-                <label className='' htmlFor="scales">全部勾選</label>
-            </div>
-        }
-    </>
+    return (
+        <>
+            {
+                selectCity === '臺北市' && <div className="Select">
+                    <input className='MyInput' type="checkbox" id="scales" name="scales"
+                        checked={isCheckedAll} onChange={handleCheckAll} />
+                    <label className='' htmlFor="scales">全部勾選</label>
+                </div>
+            }
+        </>
     )
 }

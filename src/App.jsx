@@ -4,12 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Container from './Components/Container'
 import UserProvider from './Context/UserProvider'
-
-
-
 function App() {
-
-
   return (
     <>
       <UserProvider>
@@ -18,5 +13,4 @@ function App() {
     </>
   )
 }
-
 export default App

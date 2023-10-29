@@ -23,12 +23,10 @@
     height: 50px;
     display: flex;
     align-items: center;
-
 }
 
 .SearchCheckBox {
     grid-area: searchCheckBox;
-    /* height: 300px; */
     margin-top: 10px;
 }
 
@@ -49,14 +47,26 @@
     padding-left: 10px;
 }
 
-.SearchStation {
+.SearchDiv {
+    display: flex;
+    align-items: center;
     width: 22%;
     height: 35px;
-    background-color: #F6F6F6;
-    border-radius: 5px;
     position: relative;
     left: 20px;
-    padding: 10px;
+}
+
+.SearchStation {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.DeleteIcon {
+    position: absolute;
+    right: 10px;
 }
 
 
@@ -73,17 +83,11 @@
     }
 
     .SearchSelect {
-        /* grid-area: searchSelect; */
         height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .SearchCheckBox {
-        /* grid-area: searchCheckBox; */
-        /* height: 330px; */
     }
 
     .SelectCity {
@@ -93,18 +97,21 @@
         border-radius: 5px;
     }
 
-    .SearchStation {
+    .SearchDiv {
+        display: flex;
+        align-items: center;
         width: 100%;
         height: 35px;
-        background-color: #F6F6F6;
-        border-radius: 5px;
         position: relative;
-        left: 0;
-        padding: 10px;
+        left: 0px;
+    }
+
+    .DeleteIcon {
+        position: absolute;
+        right: 0;
     }
 
     .MyImg {
-        /* grid-area: myImg; */
         display: none;
     }
 }
